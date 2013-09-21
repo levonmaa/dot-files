@@ -1,0 +1,44 @@
+execute pathogen#infect()
+
+syntax on
+filetype plugin indent on
+
+:set number
+:set hlsearch
+
+:set modeline
+:set ls=2
+
+:set expandtab
+:set tabstop=4
+:set shiftwidth=4
+
+autocmd FileType gitcommit set textwidth=72 fo=croqt
+
+set t_Co=256
+
+" Solarized stuff
+colorscheme solarized
+let g:solarized_termcolors=256
+set background=dark
+
+" NERDTree toggle
+map <C-n> :NERDTreeFind <CR>
+"autocmd BufEnter * silent! if bufname('%') !~# 'NERD_tree_' | cd %:p:h | NERDTreeFind | wincmd p | endif
+
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+" don't overwrite yank buffer when pressing del
+nnoremap <Del> "_x
+" no more ex mode
+map Q <Nop>
+
+" Tab autocompletion
+set wildmode=longest,list,full
+set wildmenu
