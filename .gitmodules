@@ -16,3 +16,6 @@
 [submodule "vim/bundle/vim-qml"]
 	path = vim/bundle/vim-qml
 	url = https://github.com/peterhoeg/vim-qml.git
+[submodule "awesome/themes/solarized"]
+	path = awesome/themes/solarized
+	url = https://github.com/cycojesus/awesome-solarized.git
