@@ -19,3 +19,9 @@
 [submodule "awesome/themes/solarized"]
 	path = awesome/themes/solarized
 	url = https://github.com/cycojesus/awesome-solarized.git
+[submodule "vim/bundle/tagbar"]
+	path = vim/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
+[submodule "vim/bundle/grep"]
+	path = vim/bundle/grep
+	url = git://github.com/yegappan/grep.git
