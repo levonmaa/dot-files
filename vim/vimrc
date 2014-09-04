@@ -42,3 +42,5 @@ map Q <Nop>
 " Tab autocompletion
 set wildmode=longest,list,full
 set wildmenu
+
+highlight clear SignColumn
